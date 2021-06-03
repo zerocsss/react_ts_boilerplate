@@ -55,11 +55,11 @@
   },
   "lint-staged": {
     "src/*.{js,jsx,mjs,ts,tsx}": [
-      "prettier --write",
+      "node_modules/.bin/prettier --write",
       "node_modules/.bin/eslint --fix"
     ],
     "src/*.{css,scss,less,json,html,md,markdown}": [
-      "prettier --write"
+      "node_modules/.bin/prettier --write"
     ]
   }
 }
