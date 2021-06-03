@@ -3,7 +3,7 @@ import { clearToken, getToken } from '@/tools/cookiesStorage.js';
 import { addPendingRequest, removePendingRequest } from './cancelRepeatRquest'; // 取消重复请求
 import { againRequest } from './requestAgainSend'; // 请求重发
 import { requestInterceptor as cacheReqInterceptor, responseInterceptor as cacheResInterceptor } from './requestCache';
-import { Notification } from 'element-ui';
+import { Notification } from 'antd';
 
 
 // 返回结果处理
