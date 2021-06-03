@@ -1,5 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
-echo 'test husky ============'
+
+echo '代码格式化...'
 npx lint-staged
 git add
