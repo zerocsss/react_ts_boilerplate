@@ -27,5 +27,5 @@
     "node_modules",
     "build"
   ],
-  "extends": "./jsconfig.json"
+  "extends": "./paths.json"
 }

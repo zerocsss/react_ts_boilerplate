@@ -1,3 +1,4 @@
+import produce from "immer";
 interface UserState {
   userInfo: {
     id: number,
@@ -23,7 +24,7 @@ const userReducer = (state=initState, action:StoreAction):object => {
         ...state,
       }
     default:
-      return {}
+      return state
   }
 }
 
