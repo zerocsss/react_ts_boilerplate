@@ -1,6 +1,6 @@
 # React boilerplate
 
-React + TS + Antd + Husky + Prettier
+React + TS + Antd + Husky + Prettier + Docker + Travis
 
 ### `yarn start`
 
