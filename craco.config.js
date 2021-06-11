@@ -7,6 +7,7 @@
 const { when, whenDev, whenProd, whenTest, ESLINT_MODES, POSTCSS_MODES } = require('@craco/craco')
 const WebpackBar = require('webpackbar'); // webpack构建进度条
 const CracoAntDesignPlugin = require("craco-antd");
+const CracoLessPlugin = require("craco-less");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer"); // 打包依赖分析
 const WebpackDayjsPlugin = require('antd-dayjs-webpack-plugin'); // moment to dayjs
 // const SimpleProgressWebpackPlugin = require('simple-progress-webpack-plugin'); 增加了打包时间原因未知
@@ -82,10 +83,30 @@ module.exports = {
       plugin: CracoAntDesignPlugin,
       options: {
         customizeTheme: {
-          '@primary-color': '#1DA57A',
-          "@link-color": "#1DA57A",
+          '@primary-color': 'red',
+          "@link-color": "red",
+        },
+        babelPluginImportOptions: {
+          // libraryName: 'antd',
+          libraryDirectory: "es",
+          style: true,
         },
       },
     },
+    // {
+    //   plugin: CracoLessPlugin,
+    //   options: {
+    //     lessLoaderOptions: {
+    //       lessOptions: {
+    //         modifyVars: {
+    //           "@primary-color": "#1DA57A",
+    //           "@link-color": "#1DA57A",
+    //           "@border-radius-base": "2px"
+    //         },
+    //         javascriptEnabled: true
+    //       }
+    //     }
+    //   }
+    // }
   ],
 };

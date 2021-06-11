@@ -1,4 +1,4 @@
-# React boilerplate
+# React boilerplate（工程化模板）
 
 React + TS + Antd + Husky + Prettier + Docker + Travis
 
